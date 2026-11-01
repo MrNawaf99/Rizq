@@ -1,0 +1,45 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "jam3iya-app",
+          "appId": "1:1048455893046:android:61c0203d2f7c65ce940897",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "jam3iya-app",
+          "configurations": {
+            "android": "1:1048455893046:android:61c0203d2f7c65ce940897",
+            "ios": "1:1048455893046:ios:4dbb1a8eeef7be39940897",
+            "macos": "1:1048455893046:ios:4dbb1a8eeef7be39940897",
+            "web": "1:1048455893046:web:df17ed943a8ee75a940897",
+            "windows": "1:1048455893046:web:20bf07bd8c797772940897"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

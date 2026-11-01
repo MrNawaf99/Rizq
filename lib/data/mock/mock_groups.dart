@@ -1,0 +1,88 @@
+// lib/data/mock/mock_groups.dart
+import '../../models/group_model.dart';
+
+class MockGroups {
+  static final List<Group> groups = [
+    Group(
+      id: "1",
+      name: "Friends Jam3iya",
+      monthlyAmount: 500,
+      receiverName: "Ahmed",
+      receiveDate: DateTime.now().add(const Duration(days: 12, hours: 3)),
+      startDate: DateTime(2026, 1, 1),
+      endDate: DateTime(2026, 5, 1),
+      isCompleted: false,
+      members: [
+        "Ahmed",
+        "Nawaf",
+        "Ali",
+        "Mohammed",
+        "Omar",
+        "Yousef",
+        "Khaled",
+        "Hassan",
+      ],
+      myUserId: "Ali",
+      roles: {
+        "Ali": GroupRole.leader,
+        "Ahmed": GroupRole.member,
+        "Nawaf": GroupRole.member,
+        "Mohammed": GroupRole.member,
+      },
+    ),
+    Group(
+      id: "2",
+      name: "University Group",
+      monthlyAmount: 1000,
+      receiverName: "Ali",
+      receiveDate: DateTime.now().add(const Duration(days: 45)),
+      startDate: DateTime(2026, 2, 1),
+      endDate: DateTime(2027, 4, 4),
+      isCompleted: false,
+      members: [
+        "Ahmed",
+        "Nawaf",
+        "Ali",
+        "Mohammed",
+        "Omar",
+        "Yousef",
+        "Khaled",
+        "Hassan",
+      ],
+      myUserId: "Ali",
+      roles: {
+        "Ali": GroupRole.leader,
+        "Ahmed": GroupRole.member,
+        "Nawaf": GroupRole.member,
+        "Mohammed": GroupRole.member,
+      },
+    ),
+    Group(
+      id: "3",
+      name: "Old Savings Group",
+      monthlyAmount: 500,
+      receiverName: "Nawaf",
+      receiveDate: DateTime(2024, 5, 1),
+      startDate: DateTime(2024, 1, 1),
+      endDate: DateTime(2024, 10, 1),
+      isCompleted: true,
+      members: [
+        "Ahmed",
+        "Nawaf",
+        "Ali",
+        "Mohammed",
+        "Omar",
+        "Yousef",
+        "Khaled",
+        "Hassan",
+      ],
+      myUserId: "Ali",
+      roles: {
+        "Ali": GroupRole.leader,
+        "Ahmed": GroupRole.member,
+        "Nawaf": GroupRole.member,
+        "Mohammed": GroupRole.member,
+      },
+    ),
+  ];
+}
